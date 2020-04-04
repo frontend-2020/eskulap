@@ -53,3 +53,25 @@ a {
     margin: 0 auto;
     padding: 0 15px;
 }
+.about{
+    &__inner{
+        text-align: center;
+        padding-top: 100px;
+        padding-left: 66px;
+        padding-right: 66px;
+        padding-bottom: 118px;
+    }
+    &__title{
+        font-size: 50px;
+        font-weight: 300;
+        color: #3695ff;
+        font-family: 'Lato', sans-serif;
+    }
+    &__text{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 36px;
+        color: #5a5a5a;
+        padding-top: 50px;
+    }
+}
