@@ -62,6 +62,8 @@ a {
   }
 }
 
+// Block Cookies_warning
+
 .cookies_warning {
   background-color: #194277;
   opacity: 0.8;
@@ -120,6 +122,208 @@ a {
   }
 }
 
+// Block Cookies_warning END
+
+/* Form */
+
+.form-wrapper {
+  padding: 50px 20px 0 20px;
+  background-color: rgba(0, 0, 0, 0.301);
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  .form {
+    position: relative;
+    background-color: #fff;
+    max-width: 812px;
+    padding: 60px;
+    margin: 0 auto;
+    border-radius: 9px;
+    box-sizing: border-box;
+    @media screen and (max-width: 768px) and (min-width: 550px) {
+      max-width: 500px;
+      padding: 20px;
+    }
+
+    form {
+      max-width: 520px;
+      margin: 0 auto;
+      @media screen and (max-width: 768px) and (min-width: 550px) {
+        max-width: 500px;
+        padding: 20px;
+      }
+      .form__close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 23px;
+        height: 23px;
+        cursor: pointer;
+        color: #3672fd;
+        font-size: 30px;
+      }
+      .form__headline {
+        text-align: center;
+        color: #3677fd;
+        font-size: 50px;
+        margin: 0 0 20px 0;
+        width: 100%;
+      }
+      input {
+        width: 100%;
+        border: 1px solid #b7c0c9;
+        margin: 14px 0 0 0;
+        padding: 19px 20px 17px 20px;
+        border-radius: 9px;
+
+        &::placeholder {
+          font-family: $fontBase;
+          color: #5a5a5a;
+          font-size: 16px;
+        }
+      }
+      textarea {
+        width: 100%;
+        border: 1px solid #b7c0c9;
+        margin: 14px 0 45px 0;
+        padding: 19px 20px 17px 20px;
+        border-radius: 9px;
+        resize: none;
+
+        &::placeholder {
+          font-family: $fontBase;
+          color: #5a5a5a;
+          font-size: 16px;
+        }
+      }
+      button {
+        width: 204px;
+        padding: 21px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 27px;
+        background: linear-gradient(
+          90deg,
+          rgba(54, 149, 255, 1) 0%,
+          rgba(53, 110, 253, 1) 100%
+        );
+        color: #fff;
+        font-family: $fontBase;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        border: none;
+      }
+    }
+  }
+}
+
+/* Form-end */
+
+// Block Header
+
+header {
+  background-image: url(../images/Eskulap-Template-Symu_co.jpg);
+  background-size: cover;
+  background-position: center;
+  .header__content {
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 815px;
+    .header__icon {
+      width: 147px;
+      height: 147px;
+      background-color: #fff;
+      border-radius: 50%;
+      margin: 80px auto 97px auto;
+      border: 9px solid #589bfe;
+      box-shadow: 0 0 0 9px #4791fe;
+    }
+    h1 {
+      font-family: $fontBase;
+      font-size: 50px;
+      color: #fff;
+      text-align: center;
+      line-height: 60px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin: 0 0 18px 0;
+    }
+    .header__text {
+      font-family: $fontBase;
+      font-weight: 400;
+      font-size: $fontSizeBase;
+      color: #fff;
+      text-align: center;
+      line-height: 35px;
+      text-transform: uppercase;
+    }
+    .header__button {
+      display: block;
+      width: 204px;
+      text-align: center;
+      padding: 20px;
+      border: none;
+      box-sizing: border-box;
+      font-family: $fontBase;
+      font-weight: bold;
+      font-size: $fontSizeBase;
+      margin: 67px auto 92px auto;
+      text-transform: uppercase;
+      color: #3695ff;
+      background-color: #fff;
+      border-radius: 26px;
+      &:hover {
+        background-color: darken(#ffffff, 10);
+      }
+      &:active {
+        background-color: #fff;
+      }
+    }
+    .header__arrow {
+      img {
+        display: block;
+        margin: 0 auto 24px auto;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) and (min-width: 550px) {
+    .header__content {
+      h1 {
+        font-size: 30px;
+      }
+      .header__text {
+        font-size: $fontSizeBase - 2;
+      }
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .header__content {
+      h1 {
+        font-size: 25px;
+        line-height: 40px;
+      }
+      .header__text {
+        line-height: 25px;
+        font-size: $fontSizeBase - 6;
+      }
+      .header__button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Block Header END
+
+// Block About_me
+
 .about_me {
   padding: 100px 0 115px;
 }
@@ -147,6 +351,88 @@ h2 {
   max-width: 1070px;
 }
 
+// Block About_me END
+
+/* Block-EXPERT */
+
+.block-expert {
+  background-color: #f1f8ff;
+  padding: 90px 0;
+  &__row {
+    display: flex;
+    margin: 40px 0 20px 0;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__cell {
+      max-width: 360px;
+      flex-grow: 1;
+      padding: 0 15px;
+      cursor: pointer;
+      &:hover {
+        @media screen and (min-width: 768px) {
+          .cell__content__icon {
+            background-color: #eceff1;
+            border-color: $colorBase;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.cell__content {
+  text-align: center;
+  &__icon {
+    border-radius: 50%;
+    border: 2px solid #bac3cc;
+    width: 140px;
+    height: 140px;
+    padding: 29px;
+    box-sizing: border-box;
+    margin: 60px auto;
+    transition-duration: 0.4s;
+    transform: scale(1);
+  }
+  &__description {
+    font-size: $fontSizeBase;
+    line-height: 35px;
+    margin: 25px 0 25px 0;
+  }
+  &__title {
+    font-size: $fontSizeBase + 8;
+    color: $colorBase;
+    font-weight: bold;
+  }
+}
+
+/* Block-EXPERT - END */
+
+/* Block-works */
+
+.block-works__row {
+  display: flex;
+  margin: 40px 0 20px 0;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  &__cell {
+    width: 260px;
+    padding: 0 15px;
+    flex-grow: 1;
+  }
+}
+
+.block-works__row__cell__content img {
+  max-width: 100%;
+}
+
+/* Block-works - END */
+
+// Block Footer
 .footer {
   background-image: url(../images/footer_bg.jpg);
   background-size: cover;
@@ -230,3 +516,4 @@ h2 {
     font-size: $fontSizeBase - 4;
   }
 }
+// Block Footer END
