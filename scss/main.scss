@@ -54,15 +54,15 @@ a {
     padding: 0 15px;
 }
 
-    .block-header {
-        background-image: url(../design/back.jpg);
+.block-header {
+    background-image: url(../design/back.jpg);
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
     
-        &__wrapper {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-        
 
     &__photo {
         margin: 93px 0 53px 0;
@@ -176,5 +176,105 @@ a {
             padding: 30px 0;
         }
     } 
+}
+
+/* about */
+.about{
+    &__inner{
+        text-align: center;
+        padding-top: 100px;
+        padding-left: 66px;
+        padding-right: 66px;
+        padding-bottom: 118px;
+    }
+    &__title{
+        font-size: 50px;
+        font-weight: 300;
+        color: #3695ff;
+        font-family: 'Lato', sans-serif;
+    }
+    &__text{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 36px;
+        color: #5a5a5a;
+        padding-top: 50px;
+    }
+}
+
+/* lworks */
+.page {
+
+    &--bg-lworks {
+        padding: 90px 0 142px 0;
+        background-color: #fff;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 40px 0 40px 0;
+    }
+
+}
+.lworks {
+
+    &__caption {
+        font-size: 50px;
+        font-weight: 300;
+        color: $colorBase;
+        text-align: center;
+        margin: 0 0 100px 0;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin: 0 0 40px 0;
+    }
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    margin: 0 -15px;
+
+    &__col {
+        padding: 0 15px;
+        flex: 1 0 33%;
+        max-width: 33%;
+        box-sizing: border-box;
+        
+        @media screen and (max-width: 767px) {
+            max-width: 50%;
+            flex: 1 0 50%;
+        }
+
+        @media screen and (max-width: 480px) {
+            max-width: 100%;
+            flex: 1 0 100%;
+        }
+    }    
+}
+.lworks-block {
+    border-radius: 9px;
+    background-color: #f4f4f4;
+    padding: 30px 40px 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 269px;
+    margin: 0 0 52px 0;
+    
+    @media screen and (max-width: 991px) {
+        padding: 20px 30px 0 30px;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 10px 20px 0 20px;
+    }
+
+    &__img {
+        display: block;
+        max-width: 100%;
+        cursor: pointer;
+    }
 }
 
