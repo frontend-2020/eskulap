@@ -3,6 +3,9 @@ $fontSecondary: 'Montserrat', sans-serif;
 
 $fontSizeBase: 16px;
 
+$fontTitleWeight: 300;
+$fontTitleColor: #3695FF;
+
 $colorBase: #3677fd;
 $colorDark: #5a5a5a;
 
@@ -53,3 +56,22 @@ a {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.block-aboutme {
+    padding: 100px 0;
+
+    &__title {
+        width: 100%;
+        text-align: center;
+        font-size: $fontSizeBase + 34px;
+        font-weight: $fontTitleWeight;
+        color: $fontTitleColor;
+    }
+
+    &__description {
+        font-size: $fontSizeBase;
+        line-height: 35px;
+        text-align: center;
+    }
+}
+
