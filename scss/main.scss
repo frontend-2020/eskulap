@@ -2,9 +2,12 @@ $fontBase: 'Lato', sans-serif;
 $fontSecondary: 'Montserrat', sans-serif;
 
 $fontSizeBase: 16px;
+$screanMobile: 450px;
+$screanTablet: 600px;
 
 $colorBase: #3677fd;
 $colorDark: #5a5a5a;
+
 
 body {
     background: #ffffff;
@@ -52,6 +55,228 @@ a {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.block-expert{
+    background-color: #f1f8ff;
+    padding: 85px 0 112px 0;
+
+    &__caption{
+        font-family: $fontBase;
+        font-weight: 300;
+        font-size: 50px;
+        text-align: center;
+        color: #3695ff;
+
+        }
+    
+
+    &__row{
+        padding: 100px 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+
+        @media screen and (max-width: $screanTablet) {
+            padding: 70px 0 0 0;
+    }
+    }
+
+    &__col{
+
+        max-width: 340px;
+        flex-grow: 1;
+        padding: 70px 15px;
+
+        @media screen and (max-width: $screanTablet) {
+                padding: 30px 10px;
+        }
+    }
+}
+
+    .block-content{
+        display: flex;
+      
+        
+        &__icon{
+            border: 1px solid #bbc4cd;
+            border-radius: 50%;
+            width: 142px;
+            height: 142px;
+            margin: 0 auto;
+
+                &--mob-app{
+            
+                    background-image: url(/images/expert-sprite.png);
+                    background-position: 30px 30px;
+                    background: no-repeat;
+                }  
+                &--web-des{
+                
+                }  
+                &--web-devel{
+
+                }  
+                &--prod-des{
+
+                }  
+                
+                &--ux-ui{
+                        
+                }  
+                
+                &--anim{
+
+                }     
+        }
+
+        &__name-icon{
+            font-family: $fontBase;
+            font-weight: bold;
+            font-size: $fontSizeBase + 8px;
+            color: #3677fd;
+            text-align: center;
+            padding: 60px 0 35px 0;
+            
+        }
+
+        &__description{
+            font-family: $fontBase;
+            font-size: $fontSizeBase;
+            color: #808283;
+            text-align: center;
+            line-height: 35px;
+
+            @media screen and (max-width: $screanTablet) {
+                line-height: 20px;
+        }
+        }
+    }
+
+
+.block-header {
+    background-image: url(../design/back.jpg);
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+
+    &__photo {
+        margin: 93px 0 53px 0;
+        width: 185px;
+        height: 185px;
+    
+
+        &__circle {
+            width: 185px;
+            height: 185px; 
+            background-color: rgba(255, 255, 255, 0.068);
+            border-radius: 50%;
+            position: relative;
+            
+
+            &:before {
+                content: '';
+                width: 164px;
+                height: 164px; 
+                background-color: rgba(255, 255, 255, 0.158);
+                border-radius: 50%;
+                position: absolute;
+                top: calc(100% - 175px);
+                left: calc(100% - 175px);
+            }
+
+            &:after {
+                content: '';
+                width: 147px;
+                height: 147px; 
+                background-color: #fff;
+                border-radius: 50%;
+                position: absolute;
+                top: calc(100% - 166px);
+                left: calc(100% - 166px);
+            }
+        }
+    }
+
+    &__caption {
+        text-transform: uppercase;
+        font-size: 50px;
+        line-height: 60px;
+        padding: 0 0 37px 0 ;
+        text-align: center;
+        color: #fff;
+        font-family: $fontBase;
+        font-weight: 900;
+        max-width: 815px;
+
+        @media screen and (max-width: 600px) {
+            font-size: 35px;
+            line-height: 45px;
+            padding: 0 0 20px 0 ;
+        }
+
+        @media screen and (max-width: 450px) {
+            font-size: 25px;
+            line-height: 35px;
+            padding: 0 0 20px 0 ;
+        }
+    }
+
+    &__description {
+        color: #fff;
+        line-height: 35px;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+        max-width: 770px;
+        padding: 0 0 80px 0;
+
+        @media screen and (max-width: 600px) {
+            
+            line-height: 20px;
+            padding: 0 0 20px 0 ;
+        }
+
+        @media screen and (max-width: 450px) {
+            line-height: 20px;
+            padding: 0 0 20px 0 ;
+            font-size: 14px;
+        }
+    }
+
+    &__button {
+        border: 0;
+        outline: none;
+        background-color: #fff;
+        color: #3677fd;
+        text-transform: uppercase;
+        line-height: 30px;
+        font-family: $fontBase;
+        font-weight: 700;
+        padding: 15px 75px;
+        border-radius: 50px;
+        transition-duration: 0.3s;
+
+        &:hover {
+            transform: scale(1.07);
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            cursor: pointer;
+        }
+    }
+
+    &__arrow {
+        padding: 92px 0 24px 0;
+        height: 32px;
+
+        @media screen and (max-width: 600px) {
+            padding: 30px 0;
+        }
+    } 
 }
 
 /* about */
