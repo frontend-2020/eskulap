@@ -45,5 +45,50 @@
         </div>
       </div>
     </div>
+    <div class="block-pop-up">
+      <div class="mainer">
+        <form class="pop-up" method="GET">
+          <div class="pop-up__close">x</div>
+          <div class="pop-up__title">Hire Me</div>
+          <input
+            type="text"
+            name="name"
+            class="pop-up__input"
+            placeholder="Your name"
+            minlength="5"
+            maxlength="50"
+          />
+          <input
+            type="email"
+            name="email"
+            class="pop-up__input"
+            placeholder="Your email"
+            minlength="5"
+            maxlength="50"
+          />
+          <textarea
+            class="pop-up__input pop-up__input--message"
+            name="message"
+            placeholder="Your message"
+            minlength="5"
+            maxlength="50"
+          ></textarea>
+          <button type="submit" class="pop-up__btn">
+            SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(".block-head__btn").click(function () {
+        $(".block-pop-up").toggle();
+        $("body").addClass("lock");
+        $(".pop-up__close").click(function () {
+          $(".block-pop-up").hide();
+          $("body").removeClass("lock");
+        });
+      });
+    </script>
   </body>
 </html>

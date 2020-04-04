@@ -73,6 +73,9 @@ a {
   margin: 0 auto;
   padding: 0 15px;
 }
+.lock {
+  overflow: hidden;
+}
 .first-block {
   background-color: $colorBase;
   width: 100%;
@@ -170,5 +173,81 @@ a {
     font-size: $fontSizeBase;
     line-height: 35px;
     text-align: center;
+  }
+}
+.block-pop-up {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 150px 15px 0 15px;
+  box-sizing: border-box;
+  .pop-up {
+    max-width: 813px;
+    background-color: #fff;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    padding: 0 15px;
+    &__close {
+      width: 22px;
+      height: 22px;
+      font-size: 30px;
+      align-self: flex-end;
+      color: $colorBase;
+      margin: 5px 0px 30px 0;
+      cursor: pointer;
+      &:hover {
+        color: red;
+      }
+    }
+    &__title {
+      font-size: $fontTitleSize;
+      color: $colorBase;
+      margin: 0 0 11px 0;
+    }
+    &__input {
+      max-width: 519px;
+      width: 100%;
+      height: 46px;
+      margin: 0 0 14px 0;
+      padding: 0 22px;
+      border-radius: 7px;
+      border: 1px solid #b7c0c9;
+      &:invalid {
+        border: 1px solid #df1515;
+      }
+    }
+    &__input--message {
+      padding-top: 18px;
+      height: 180px;
+      margin: 0 0 45px 0;
+      resize: none;
+    }
+    &__btn {
+      padding: 0 50px;
+      height: 55px;
+      background: linear-gradient(
+        90deg,
+        rgba(54, 149, 255, 1) 0%,
+        rgba(53, 110, 253, 1) 100%
+      );
+      color: #fff;
+      font-size: 16px;
+      text-transform: uppercase;
+      border-radius: 27px;
+      border: none;
+      margin: 0 0 60px 0;
+      cursor: pointer;
+      &:hover {
+        background-color: darken($colorBase, 20);
+      }
+    }
   }
 }
