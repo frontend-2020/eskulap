@@ -313,6 +313,7 @@ a {
 
         @media screen and (max-width: $breakpointTablet) {
             padding: 50px 0;
+            flex-direction: column;
         }
     }
 
@@ -328,7 +329,9 @@ a {
         font-weight: 300;
 
         @media screen and (max-width: $breakpointTablet) {
+            text-align: center;
             font-size: $fontSizeBase + 16;
+            margin-bottom: 25px;
         }
     }
 
@@ -346,10 +349,6 @@ a {
         border: none;
         color: $colorBase;
         cursor: pointer;
-
-        @media screen and (max-width: $breakpointTablet) {
-            padding: 17px 35px ;
-        }
 
         &:hover {
             background-color: #2569c9;
