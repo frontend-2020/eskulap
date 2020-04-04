@@ -6,6 +6,10 @@ $fontSizeBase: 16px;
 $colorBase: #3677fd;
 $colorDark: #5a5a5a;
 
+$fontTitleWeight: 300;
+$fontTitleColor: #3695FF;
+$fontTitleSize: 50px;
+
 body {
     background: #ffffff;
     text-decoration: none;
@@ -52,4 +56,40 @@ a {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+$fontTitleWeight: 300;
+$fontTitleColor: #3695FF;
+$fontTitleSize: 50px;
+
+.name{
+    font-weight: $fontTitleWeight;
+    color: $fontTitleColor;
+    font-size: $fontTitleSize;
+    margin: 70px auto;
+    text-align: center;
+}
+
+.block{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px; 
+}
+
+.block__item{
+    min-width: 350px;
+    min-height: 270px;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 25px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
 }
