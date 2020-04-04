@@ -2,9 +2,12 @@ $fontBase: 'Lato', sans-serif;
 $fontSecondary: 'Montserrat', sans-serif;
 
 $fontSizeBase: 16px;
+$screanMobile: 450px;
+$screanTablet: 600px;
 
 $colorBase: #3677fd;
 $colorDark: #5a5a5a;
+
 
 body {
     background: #ffffff;
@@ -53,3 +56,100 @@ a {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.block-expert{
+    background-color: #f1f8ff;
+    padding: 85px 0 112px 0;
+
+    &__caption{
+        font-family: $fontBase;
+        font-weight: 300;
+        font-size: 50px;
+        text-align: center;
+        color: #3695ff;
+
+        }
+    
+
+    &__row{
+        padding: 100px 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+
+        @media screen and (max-width: $screanTablet) {
+            padding: 70px 0 0 0;
+    }
+    }
+
+    &__col{
+
+        max-width: 340px;
+        flex-grow: 1;
+        padding: 70px 15px;
+
+        @media screen and (max-width: $screanTablet) {
+                padding: 30px 10px;
+        }
+    }
+}
+
+    .block-content{
+        display: flex;
+      
+        
+        &__icon{
+            border: 1px solid #bbc4cd;
+            border-radius: 50%;
+            width: 142px;
+            height: 142px;
+            margin: 0 auto;
+
+                &--mob-app{
+            
+                    background-image: url(/images/expert-sprite.png);
+                    background-position: 30px 30px;
+                    background: no-repeat;
+                }  
+                &--web-des{
+                
+                }  
+                &--web-devel{
+
+                }  
+                &--prod-des{
+
+                }  
+                
+                &--ux-ui{
+                        
+                }  
+                
+                &--anim{
+
+                }     
+        }
+
+        &__name-icon{
+            font-family: $fontBase;
+            font-weight: bold;
+            font-size: $fontSizeBase + 8px;
+            color: #3677fd;
+            text-align: center;
+            padding: 60px 0 35px 0;
+            
+        }
+
+        &__description{
+            font-family: $fontBase;
+            font-size: $fontSizeBase;
+            color: #808283;
+            text-align: center;
+            line-height: 35px;
+
+            @media screen and (max-width: $screanTablet) {
+                line-height: 20px;
+        }
+        }
+    }
