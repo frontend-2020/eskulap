@@ -176,9 +176,19 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
+
+        
     
         @media screen and (max-width: 768px){
             width: 100%;
+        }
+        @media screen and (min-width: 1140px){
+            cursor: pointer;
+            
+            &:hover{
+                transform: scale(1.03);
+                border: 1px #3695ff solid;
+            }
         }
     }
 }
@@ -204,3 +214,50 @@ a {
     text-align: center;
   }
 }
+
+.cookies{
+    position: fixed;
+    background-color: #194277;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;    
+    width: 100%;
+    z-index: 10;
+
+    &__text{
+        color: white;
+
+    }
+    .cookies__button{
+        width: 112px;
+        height: 30px;
+        background-color: white;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        color: #194277;
+        font-weight: bold;
+        margin-left: 65px;
+
+        &:hover{
+            background-color: #f4f4f4;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 15px;
+        width: 100%;
+        .cookies__button{
+            cursor: default;
+            margin: 10px auto;            
+        }
+    }
+    
+}
+
