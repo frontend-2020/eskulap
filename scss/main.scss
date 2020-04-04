@@ -55,7 +55,85 @@ a {
 }
 
 .block-header {
-    background-image: url(../design/back.jpg);
+    background-image: url(../images/lworks/back.jpg);
+
+    &__burger-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        padding: 103px 0 0 0;
+
+        &__burgerOn {
+            display: block;
+            width: 25px;
+            height: 22px;
+            position: fixed;
+
+            &--ltOn {
+                width: 100%;
+                height: 4px;
+                position: absolute;
+                background-color: #fff;
+                border-radius: 4px;
+                top: 10;
+                transform: translateY(9px) rotate(404deg);
+                transition-duration: 0.5s;
+            }
+
+            &--lmOn {
+                display: none;
+                transition-duration: 0.5s;
+            }
+
+            &--lbOn {
+                width: 100%;
+                height: 4px;
+                position: absolute;
+                background-color: #fff;
+                border-radius: 4px;
+                top: 9px;
+                left: 0;
+                transform: translateY(-9px) rotate(-404deg);
+                transition-duration: 0.5s;
+                } 
+        }
+
+        &__burger {
+            width: 25px;
+            height: 22px;
+            display: block;
+            position: relative;
+
+            &--lt {
+                width: 100%;
+                height: 4px;
+                position: absolute;
+                background-color: #fff;
+                border-radius: 4px;
+                top: 0;
+                transition-duration: 0.5s;
+            }  
+            
+            &--lm {
+                width: 100%;
+                    height: 4px;
+                    position: absolute;
+                    background-color: #fff;
+                    border-radius: 4px;
+                    top: 9px;
+                    transition-duration: 0.5s;
+            }
+
+            &--lb {
+                width: 100%;
+                height: 4px;
+                position: absolute;
+                background-color: #fff;
+                border-radius: 4px;
+                top: 18px;
+                transition-duration: 0.5s;
+            }
+        }
+    }
 
     &__wrapper {
         display: flex;
@@ -171,6 +249,11 @@ a {
     &__arrow {
         padding: 92px 0 24px 0;
         height: 32px;
+        transition-duration: 0.4s;
+
+        &:hover {
+            transform: scale(1.3);
+        }
 
         @media screen and (max-width: 600px) {
             padding: 30px 0;
