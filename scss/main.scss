@@ -88,3 +88,60 @@ h2 {
   margin: 46px 0 0 0;
   max-width: 1070px;
 }
+
+/* Block-EXPERT */
+
+.block-expert {
+  background-color: #f1f8ff;
+  padding: 90px 0;
+  &__row {
+    display: flex;
+    margin: 40px 0 20px 0;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__cell {
+      max-width: 360px;
+      flex-grow: 1;
+      padding: 0 15px;
+      cursor: pointer;
+      &:hover {
+        @media screen and (min-width: 768px) {
+          .cell__content__icon {
+            background-color: #eceff1;
+            border-color: $colorBase;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.cell__content {
+  text-align: center;
+  &__icon {
+    border-radius: 50%;
+    border: 2px solid #bac3cc;
+    width: 140px;
+    height: 140px;
+    padding: 29px;
+    box-sizing: border-box;
+    margin: 60px auto;
+    transition-duration: 0.4s;
+    transform: scale(1);
+  }
+  &__description {
+    font-size: $fontSizeBase;
+    line-height: 35px;
+    margin: 25px 0 25px 0;
+  }
+  &__title {
+    font-size: $fontSizeBase + 8;
+    color: $colorBase;
+    font-weight: bold;
+  }
+}
+
+/* Block-EXPERT - END */
