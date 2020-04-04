@@ -4,8 +4,14 @@ $fontSecondary: "Montserrat", sans-serif;
 $fontSizeBase: 16px;
 $fontTitleSize: 50px;
 
+$fontTitleWeight: 300;
+$fontTitleColor: #3695ff;
+
 $colorBase: #3677fd;
 $colorDark: #5a5a5a;
+
+$breakpointTablet: 768px;
+$breakpointMobile: 480px;
 
 body {
   background: #ffffff;
@@ -142,5 +148,27 @@ a {
     width: 20px;
     height: 32px;
     display: block;
+  }
+}
+
+.block-aboutme {
+  padding: 100px 0;
+
+  @media screen and (max-width: $breakpointMobile) {
+    padding: 50px 0;
+  }
+
+  &__title {
+    width: 100%;
+    text-align: center;
+    font-size: $fontSizeBase + 34px;
+    font-weight: $fontTitleWeight;
+    color: $fontTitleColor;
+  }
+
+  &__description {
+    font-size: $fontSizeBase;
+    line-height: 35px;
+    text-align: center;
   }
 }
