@@ -146,6 +146,28 @@ h2 {
 
 /* Block-EXPERT - END */
 
+/* Block-works */
+
+.block-works__row {
+  display: flex;
+  margin: 40px 0 20px 0;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  &__cell {
+    width: 260px;
+    padding: 0 15px;
+    flex-grow: 1;
+  }
+}
+
+.block-works__row__cell__content img {
+  max-width: 100%;
+}
+
+/* Block-works - END */
+
 header {
   background-image: url(../design/Eskulap-Template-Symu_co.jpg);
   background-size: cover;
