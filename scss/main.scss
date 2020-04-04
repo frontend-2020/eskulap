@@ -440,11 +440,10 @@ a {
         border: none;
         color: $colorBase;
         cursor: pointer;
-    }
-
-    &:hover {
-      background-color: #2569c9;
-      color: #fff;
+        &:hover {
+            background-color: #2569c9;
+            color: #fff;
+        }
     }
 }
 .cookies {
