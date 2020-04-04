@@ -105,29 +105,31 @@ a {
             width: 142px;
             height: 142px;
             margin: 0 auto;
+            background-image: url(/images/expert-sprite.png);
+            background-repeat: no-repeat;
 
                 &--mob-app{
-            
-                    background-image: url(/images/expert-sprite.png);
-                    background-position: 30px 30px;
-                    background: no-repeat;
+                    background-position: 49px 42px;
                 }  
-                &--web-des{
                 
+                &--web-des{
+                    background-position: -91px 42px;
                 }  
+                
                 &--web-devel{
-
+                    background-position: 36px -66px;
                 }  
+                
                 &--prod-des{
-
+                    background-position: -99px -63px;
                 }  
                 
                 &--ux-ui{
-                        
+                    background-position: 40px -197px;
                 }  
                 
                 &--anim{
-
+                    background-position: -84px -202px;
                 }     
         }
 
