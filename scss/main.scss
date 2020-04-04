@@ -145,3 +145,97 @@ h2 {
 }
 
 /* Block-EXPERT - END */
+
+header {
+  background-image: url(../design/Eskulap-Template-Symu_co.jpg);
+  background-size: cover;
+  background-position: center;
+  .header__content {
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 815px;
+    .header__icon {
+      width: 147px;
+      height: 147px;
+      background-color: #fff;
+      border-radius: 50%;
+      margin: 80px auto 97px auto;
+      border: 9px solid #589bfe;
+      box-shadow: 0 0 0 9px #4791fe;
+    }
+    h1 {
+      font-family: $fontBase;
+      font-size: 50px;
+      color: #fff;
+      text-align: center;
+      line-height: 60px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin: 0 0 18px 0;
+    }
+    .header__text {
+      font-family: $fontBase;
+      font-weight: 400;
+      font-size: $fontSizeBase;
+      color: #fff;
+      text-align: center;
+      line-height: 35px;
+      text-transform: uppercase;
+    }
+    .header__button {
+      display: block;
+      width: 204px;
+      text-align: center;
+      padding: 20px;
+      border: none;
+      box-sizing: border-box;
+      font-family: $fontBase;
+      font-weight: bold;
+      font-size: $fontSizeBase;
+      margin: 67px auto 92px auto;
+      text-transform: uppercase;
+      color: #3695ff;
+      background-color: #fff;
+      border-radius: 26px;
+      &:hover {
+        background-color: darken(#ffffff, 10);
+      }
+      &:active {
+        background-color: #fff;
+      }
+    }
+    .header__arrow {
+      img {
+        display: block;
+        margin: 0 auto 24px auto;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) and (min-width: 550px) {
+    .header__content {
+      h1 {
+        font-size: 30px;
+      }
+      .header__text {
+        font-size: $fontSizeBase - 2;
+      }
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .header__content {
+      h1 {
+        font-size: 25px;
+        line-height: 40px;
+      }
+      .header__text {
+        line-height: 25px;
+        font-size: $fontSizeBase - 6;
+      }
+      .header__button {
+        width: 100%;
+      }
+    }
+  }
+}
