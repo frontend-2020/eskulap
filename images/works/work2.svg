@@ -1,0 +1,43 @@
+<svg id="Work_2" data-name="Work  2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="174" height="248" viewBox="0 0 174 248">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-3 {
+        fill: #469dff;
+      }
+    </style>
+    <filter id="filter" x="0" y="0" width="173" height="248" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.646"/>
+      <feFlood result="flood" flood-color="#303030" flood-opacity="0.04"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="Prostokąt_3_kopia_6" data-name="Prostokąt 3 kopia 6" class="cls-1" x="6" y="6" width="160" height="235"/>
+  <rect id="Prostokąt_8" data-name="Prostokąt 8" class="cls-2" x="47" y="33" width="62" height="6"/>
+  <rect id="Prostokąt_4_kopia_5" data-name="Prostokąt 4 kopia 5" class="cls-3" x="4" y="5" width="242" height="50"/>
+  <rect id="Prostokąt_6" data-name="Prostokąt 6" class="cls-3" x="19" y="76" width="35" height="35"/>
+  <rect id="Prostokąt_6_kopia" data-name="Prostokąt 6 kopia" class="cls-3" x="19" y="127" width="35" height="35"/>
+  <rect id="Prostokąt_6_kopia_2" data-name="Prostokąt 6 kopia 2" class="cls-3" x="19" y="178" width="35" height="35"/>
+  <rect id="Prostokąt_7" data-name="Prostokąt 7" class="cls-3" x="66" y="80" width="84" height="5"/>
+  <rect id="Prostokąt_7_kopia" data-name="Prostokąt 7 kopia" class="cls-3" x="66" y="91" width="75" height="5"/>
+  <rect id="Prostokąt_7_kopia_2" data-name="Prostokąt 7 kopia 2" class="cls-3" x="66" y="102" width="69" height="5"/>
+  <rect id="Prostokąt_7_kopia_5" data-name="Prostokąt 7 kopia 5" class="cls-2" x="52" y="36" width="69" height="5"/>
+  <rect id="Prostokąt_7_kopia_6" data-name="Prostokąt 7 kopia 6" class="cls-2" x="150" y="9" width="13" height="5"/>
+  <rect id="Prostokąt_7_kopia_7" data-name="Prostokąt 7 kopia 7" class="cls-2" x="10" y="9" width="13" height="5"/>
+  <rect id="Prostokąt_7_kopia_8" data-name="Prostokąt 7 kopia 8" class="cls-2" x="28" y="9" width="13" height="5"/>
+  <rect id="Prostokąt_7_kopia_3" data-name="Prostokąt 7 kopia 3" class="cls-3" x="66" y="130" width="75" height="5"/>
+  <rect id="Prostokąt_7_kopia_3-2" data-name="Prostokąt 7 kopia 3" class="cls-3" x="66" y="141" width="80" height="5"/>
+  <rect id="Prostokąt_7_kopia_3-3" data-name="Prostokąt 7 kopia 3" class="cls-3" x="66" y="152" width="75" height="5"/>
+  <rect id="Prostokąt_7_kopia_4" data-name="Prostokąt 7 kopia 4" class="cls-3" x="66" y="183" width="75" height="5"/>
+  <rect id="Prostokąt_7_kopia_4-2" data-name="Prostokąt 7 kopia 4" class="cls-3" x="66" y="194" width="75" height="5"/>
+  <rect id="Prostokąt_7_kopia_4-3" data-name="Prostokąt 7 kopia 4" class="cls-3" x="66" y="205" width="80" height="5"/>
+</svg>
