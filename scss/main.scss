@@ -1,5 +1,5 @@
-$fontBase: 'Lato', sans-serif;
-$fontSecondary: 'Montserrat', sans-serif;
+$fontBase: "Lato", sans-serif;
+$fontSecondary: "Montserrat", sans-serif;
 
 $fontSizeBase: 16px;
 
@@ -7,47 +7,87 @@ $colorBase: #3677fd;
 $colorDark: #5a5a5a;
 
 body {
-    background: #ffffff;
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
+  background: #ffffff;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
 }
 
-body, form, div, p, a, img, h1, h2, h3, h4, h5, h6, table, table tr, table td {
-    border: none;
-    color: #000000;
-    font-family: $fontBase;
-    font-size: $fontSizeBase;
-    font-style: normal;
-    font-weight: normal;
-    margin: 0;
-    padding: 0;
+body,
+form,
+div,
+p,
+a,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+table tr,
+table td {
+  border: none;
+  color: #000000;
+  font-family: $fontBase;
+  font-size: $fontSizeBase;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
 }
 
 input,
 button,
 textarea,
 select {
-    outline: none;
-    font-family: $fontBase;
-    font-size: $fontSizeBase;
-    box-sizing: border-box;
+  outline: none;
+  font-family: $fontBase;
+  font-size: $fontSizeBase;
+  box-sizing: border-box;
 }
 
 input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
+  border: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: underline;
-    outline: none;
+  text-decoration: underline;
+  outline: none;
 
-    &:hover {
-        text-decoration: none;
-    }
+  &:hover {
+    text-decoration: none;
+  }
 }
 
+.about_me {
+  padding: 100px 0 115px;
+}
+.mainer {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h2 {
+  font-family: $fontBase;
+  font-weight: 300;
+  font-size: 50px;
+  color: $colorBase;
+  text-align: center;
+}
+
+.about_me-description {
+  font-family: $fontBase;
+  font-size: $fontSizeBase;
+  line-height: 35px;
+  color: $colorDark;
+  text-align: center;
+  margin: 46px 0 0 0;
+  max-width: 1070px;
+}
 
 header{
     background-image: url(../design/Eskulap-Template-Symu_co.jpg);
