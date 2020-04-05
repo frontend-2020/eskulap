@@ -26,6 +26,9 @@
     <div class="first-block">
       <div class="mainer">
         <div class="block-head">
+          <div class="block-head__toggle">
+            <div class="block-head__toggle-line"></div>
+          </div>
           <div class="block-head__logo"></div>
           <div class="block-head__title">
             free portfolio PSD template FOR GRAPHIC designerS
@@ -41,7 +44,7 @@
       </div>
     </div>
 
-    <div class="block-aboutme">
+    <div class="block-aboutme" id="about">
       <div class="mainer">
         <h2 class="block-aboutme__title">About Me</h2>
         <div class="block-aboutme__description">
@@ -56,7 +59,7 @@
       </div>
     </div>
 
-    <div class="block-slide">
+    <div class="block-slide" id="service">
       <div class="block-slide__mainer">
         <div class="page">
           <div class="page__title">Expert In</div>
@@ -139,7 +142,7 @@
       </div>
     </div>
 
-    <div class="latest-works">
+    <div class="latest-works" id="works">
       <div class="mainer">
         <div class="latest-works__name">Latest Works</div>
         <div class="latest-works__wrapper">
@@ -184,7 +187,7 @@
     <div class="block-pop-up">
       <div class="mainer">
         <form class="pop-up" method="GET">
-          <div class="pop-up__close">x</div>
+          <div class="pop-up__close"></div>
           <div class="pop-up__title">Hire Me</div>
           <input
             type="text"
@@ -215,6 +218,53 @@
         </form>
       </div>
     </div>
+
+    <div class="block-toggle-menu">
+      <div class="mainer">
+        <ul class="toggle-menu-list">
+          <li class="toggle-menu-list__close"></li>
+          <li class="toggle-menu-list__item">
+            <a href="#about" class="toggle-menu-list__item-link">About Me</a>
+          </li>
+          <li class="toggle-menu-list__item">
+            <a href="#service" class="toggle-menu-list__item-link">Services</a>
+          </li>
+          <li class="toggle-menu-list__item">
+            <a href="#works" class="toggle-menu-list__item-link">My Works</a>
+          </li>
+          <li class="toggle-menu-list__item">
+            <a href="#clients" class="toggle-menu-list__item-link">Clients</a>
+          </li>
+          <li class="toggle-menu-list__line"></li>
+          <li class="toggle-menu-list__social">
+            <a
+              href="https://www.facebook.com/"
+              target="blank"
+              class="toggle-menu-list__social-item toggle-menu-list__social-item--f"
+            ></a>
+            <a
+              href="https://twitter.com/"
+              target="blank"
+              class="toggle-menu-list__social-item toggle-menu-list__social-item--t"
+            ></a>
+            <a
+              href="https://dribbble.com/"
+              target="blank"
+              class="toggle-menu-list__social-item toggle-menu-list__social-item--d"
+            ></a>
+            <a
+              href="https://www.behance.net/"
+              target="blank"
+              class="toggle-menu-list__social-item toggle-menu-list__social-item--b"
+            ></a>
+          </li>
+          <li class="toggle-menu-list__lang">
+            <a href="#" class="toggle-menu-list__lang-link">ENG</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
       $(".block-head__btn").click(function () {
@@ -224,6 +274,19 @@
           $(".block-pop-up").hide();
           $("body").removeClass("lock");
         });
+      });
+
+      $(".block-head__toggle").click(function () {
+        $(".block-toggle-menu").toggle();
+        $(".toggle-menu-list__close").click(function () {
+          $(".block-toggle-menu").hide();
+        });
+      });
+
+      $(".cookies__button").click(function () {
+        $(".cookies").hide();
+        $(".block-head").css({ padding: "96px 0 24px 0" });
+        $(".block-head__toggle").css({ top: "30px" });
       });
     </script>
   </body>
