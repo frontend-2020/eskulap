@@ -430,6 +430,9 @@ h2 {
   &__cell {
     max-width: 360px;
     margin: 0 0 55px 0;
+    img {
+      max-width: 100%;
+    }
   }
 }
 
