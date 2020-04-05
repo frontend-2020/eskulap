@@ -297,6 +297,9 @@ header {
       &:active {
         background-color: #fff;
       }
+      @media screen and (max-width: 550px) {
+        margin: 40px auto;
+      }
     }
     .header__arrow {
       img {
@@ -339,7 +342,10 @@ header {
 // Block About_me
 
 .about_me {
-  padding: 100px 0 115px;
+  padding: 100px 0 115px 0;
+  @media screen and (max-width: 768px) {
+    padding: 45px 0;
+}
 }
 .mainer {
   max-width: 1140px;
