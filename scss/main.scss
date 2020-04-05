@@ -369,6 +369,9 @@ h2 {
 .block-expert {
   background-color: #f1f8ff;
   padding: 90px 0;
+  @media screen and (max-width: 768px) {
+    padding: 45px 0;
+  }
   &__row {
     display: flex;
     flex-wrap: wrap;
@@ -428,9 +431,13 @@ h2 {
 .block-works {
   background-color: white;
   padding: 90px 0;
+  @media screen and (max-width: 768px) {
+    padding: 45px 0;
+  }
 }
 
 .block-works__row {
+  padding-top: 35px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -444,6 +451,9 @@ h2 {
   &__cell {
     max-width: 360px;
     margin: 0 0 55px 0;
+    @media screen and (max-width: 768px) {
+      margin: 0 0 20px 0;
+    }
     img {
       max-width: 100%;
     }
