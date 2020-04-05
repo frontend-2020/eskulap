@@ -199,7 +199,7 @@ a {
         border-radius: 9px;
         resize: none;
         @media screen and (max-width: 400px) {
-          margin-bottom: 17px;
+          margin-bottom: 18px;
         }
 
         &:focus {
@@ -213,7 +213,8 @@ a {
         }
       }
       button {
-        width: 204px;
+        max-width: 204px;
+        width: 100%;
         padding: 21px;
         display: block;
         margin: 0 auto;
