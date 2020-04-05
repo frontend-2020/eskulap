@@ -73,6 +73,7 @@ main {
         transform: translate3d(75%, 0, 0);
         transition-duration: 1.7s;
         margin: 103px 0 0 0;
+        cursor: pointer;
 
         &--ltOn {
             width: 100%;
@@ -111,7 +112,8 @@ main {
         z-index: 1000;
         margin: 103px 0 0 0;
         right: 5%;
-
+        cursor: pointer;
+        transition-duration: 0.4s;
 
         @media screen and (max-width: 900px) {
             display: block; 
