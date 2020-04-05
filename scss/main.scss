@@ -245,6 +245,9 @@ header {
     margin: 0 auto;
     padding: 25px;
     max-width: 815px;
+    @media screen and (max-width: 550px) {
+      padding: 20px;
+    }
     .header__icon {
       width: 147px;
       height: 147px;
