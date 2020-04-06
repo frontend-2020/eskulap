@@ -250,6 +250,13 @@ a {
           border-radius: 50%;
           margin: 0 auto;
           margin-bottom: 60px;
+          transition-duration: 0.3s;;
+
+          &:hover {
+            background-color: white;
+            transform: scale(1.1,1.1);
+            border: 1px solid #3677fd;
+          }
 
           @media screen and (max-width: 768px) {
             margin-top: 40px;
@@ -274,6 +281,66 @@ a {
         }
       }
     }
+  }
+
+  &__logo {
+      margin-bottom: 80px;
+      transition-duration: 0.3s;
+
+      &-microsoft {
+          margin: 0 50px;
+          display: inline-block;
+          width: 151px;
+          height: 40px;
+          background-image: url(../img/sprite_logo-2.png);
+
+            &:hover {
+                background-position: 0 -54px;
+            }
+
+      }
+
+      &-samsung {
+          margin: 0 50px;
+          display: inline-block;
+          width: 187px;
+          height: 42px;
+          background-image: url(../img/sprite_logo-2.png);
+          background-position: -150px -4px;
+          
+          &:hover {
+            background-position: -150px -56px;
+        }
+      }
+
+      &-ibm {
+          margin: 0 50px;
+          display: inline-block;
+          width: 140px;
+          height: 57px;
+          background-image: url(../img/sprite_logo-2.png);
+          background-position: 324px 1px;
+          
+          &:hover {
+            background-position: 324px -55px;
+        }
+      }
+
+      &-google {
+          margin: 0 50px;
+          display: inline-block;
+          width: 170px;
+          height: 56px;
+          background-image: url(../img/sprite_logo-2.png);
+          background-position: 180px 0;
+         
+          &:hover {
+            background-position: 180px 56px;
+        }
+      }
+
+    
+   
   }
 }
 
