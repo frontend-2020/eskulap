@@ -92,6 +92,7 @@ a {
 
   @media screen and (max-width: 425px) {
     font-size: $fontSizeBase - 4;
+    text-align: center;
   }
 }
 
@@ -117,7 +118,7 @@ a {
     margin: 0 0 0 20px;
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 320px) {
     margin: 0 0 0 5px;
   }
 }
@@ -219,7 +220,11 @@ a {
         display: block;
         margin: 0 auto;
         border-radius: 27px;
-        background: linear-gradient(90deg, rgba(54, 149, 255, 1) 0%, rgba(53, 110, 253, 1) 100%);
+        background: linear-gradient(
+          90deg,
+          rgba(54, 149, 255, 1) 0%,
+          rgba(53, 110, 253, 1) 100%
+        );
         color: #fff;
         font-family: $fontBase;
         font-weight: bold;
@@ -345,7 +350,7 @@ header {
   padding: 100px 0 115px 0;
   @media screen and (max-width: 768px) {
     padding: 45px 0;
-}
+  }
 }
 .mainer {
   max-width: 1140px;
