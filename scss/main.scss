@@ -285,8 +285,6 @@ a {
 
   &__logo {
       margin-bottom: 80px;
-      transition-duration: 0.3s;
-
 
       &-microsoft {
           margin: 20px 50px;
@@ -297,10 +295,7 @@ a {
 
             &:hover {
                 background-position: 0 -54px;
-            }
-
-            
-
+            }   
       }
 
       &-samsung {
@@ -328,8 +323,6 @@ a {
           &:hover {
             background-position: 324px -55px;
         }
-
-        
       }
 
       &-google {
@@ -343,11 +336,7 @@ a {
           &:hover {
             background-position: 180px 56px;
         }
-
       }
-
-    
-   
   }
 }
 
