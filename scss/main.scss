@@ -287,8 +287,9 @@ a {
       margin-bottom: 80px;
       transition-duration: 0.3s;
 
+
       &-microsoft {
-          margin: 0 50px;
+          margin: 20px 50px;
           display: inline-block;
           width: 151px;
           height: 40px;
@@ -298,10 +299,12 @@ a {
                 background-position: 0 -54px;
             }
 
+            
+
       }
 
       &-samsung {
-          margin: 0 50px;
+          margin: 20px 50px;
           display: inline-block;
           width: 187px;
           height: 42px;
@@ -311,10 +314,11 @@ a {
           &:hover {
             background-position: -150px -56px;
         }
+
       }
 
       &-ibm {
-          margin: 0 50px;
+          margin: 20px 50px;
           display: inline-block;
           width: 140px;
           height: 57px;
@@ -324,10 +328,12 @@ a {
           &:hover {
             background-position: 324px -55px;
         }
+
+        
       }
 
       &-google {
-          margin: 0 50px;
+          margin: 20px 50px;
           display: inline-block;
           width: 170px;
           height: 56px;
@@ -337,6 +343,7 @@ a {
           &:hover {
             background-position: 180px 56px;
         }
+
       }
 
     
