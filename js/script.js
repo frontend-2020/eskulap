@@ -34,7 +34,7 @@ window.addEventListener("load", () => {
             form.style.display = "";
             overlay.style.display = "";
         }
-    }, 4000);
+    }, 2000);
 
 
 });
