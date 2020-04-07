@@ -10,7 +10,7 @@ window.addEventListener("load", () => {
     const main = document.querySelector("main");
     const accept = document.querySelector(".accept")
     const btn = document.querySelector(".accept__btn");
-
+    const fbtn = document.querySelector(".footer__btn");
 
 
     burgerOff.onclick = function () {
@@ -26,6 +26,11 @@ window.addEventListener("load", () => {
 
     btn.onclick = function () {
         accept.style.display = "none";
+    }
+
+    fbtn.onclick = function () {
+        form.style.display = "block";
+        overlay.style.display = "block";
     }
 
     setTimeout(() => {
