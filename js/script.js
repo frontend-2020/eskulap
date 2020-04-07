@@ -8,6 +8,8 @@ window.addEventListener("load", () => {
     const close = document.querySelector(".form__notification__close");
     const menu = document.querySelector(".block-header__nav");
     const main = document.querySelector("main");
+    const accept = document.querySelector(".accept")
+    const btn = document.querySelector(".accept__btn");
 
 
 
@@ -20,6 +22,10 @@ window.addEventListener("load", () => {
         main.classList.toggle("main-active");
 
 
+    }
+
+    btn.onclick = function () {
+        accept.style.display = "none";
     }
 
     setTimeout(() => {
